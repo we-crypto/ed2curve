@@ -1,0 +1,37 @@
+{
+  "name": "@wecrpto/ed2curve",
+  "version": "0.1.0",
+  "description": "Curve25519 Diffie-Hellman implementation",
+  "main": "ed2curve.js",
+  "author": "wecrpto<lanbery@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "uglifyjs ed2curve.js -c -m -o dist/ed2curve.min.js",
+    "test": "faucet test/*.js",
+    "lint":"eslint --fix ed2curve.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/we-crypto/ed2curve.git"
+  },
+  "keywords": [
+    "ed25519",
+    "curve25519",
+    "djb",
+    "crypto",
+    "public",
+    "keys",
+    "edwards",
+    "montgomery",
+    "elliptic"
+  ],
+  "dependencies": {
+    "@wecrpto/nacl": "^0.1.0"
+  },
+  "devDependencies": {
+    "eslint": "6.8.0",
+    "tape": "4.13.3",
+    "uglify-js": "3.12.7"
+  }
+}

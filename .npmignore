@@ -1,0 +1,10 @@
+.eslintrc
+.travis.yml
+bower.json
+test
+yarn.lock
+.vscode/
+node_modules
+yarn-error.log
+config/*
+ci/*
